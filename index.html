@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pure JS Flow (with D3 Force Layout)</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="panel">
+        <h2>Pure JS Flow</h2>
+        <button id="addNodeBtn">Add Node</button>
+        <button id="randomizeBtn">Randomize Layout</button>
+        <button id="stabilizeBtn">Stabilize (tick)</button>
+        <button id="exportBtn">Export JSON</button>
+        <input id="importInput" type="file" accept="application/json" />
+        <small>Tip: Click a node, then click another node to create an edge. Drag nodes. Wheel to zoom, drag background to pan.</small>
+      </div>
+      <svg id="svg"></svg>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
